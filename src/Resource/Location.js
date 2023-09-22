@@ -19,34 +19,31 @@ export default function Location() {
   const canvas = {
     overflow: "hidden",
     background: "none",
-    height: "450px",
+    height: "480px",
     width: "auto",
   };
 
   return (
-    <Container>
+    <>
       <div className="Header">
         <NavBar />
       </div>
 
-      <p>location</p>
-      {/* 
-            <SimpleMap /> */}
-
-      <div>
-        <div style={canvas}>
-          <iframe
-            src="https://maps.google.com/maps?q=indian%20Public%20School%20Suhili%20485881&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-            id="gmap_canvas"
-            frameborder="10"
-            style={styleS}
-          />
+      <Container>
+        <div className="     shadow-lg p-1 mb-5 bg-white rounded">
+          <div style={canvas}>
+            <iframe
+              src="https://maps.google.com/maps?q=indian%20Public%20School%20Suhili%20485881&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              id="gmap_canvas"
+              frameborder="10"
+              style={styleS}
+            />
+          </div>
         </div>
-      </div>
-
-      <div className="Footer">
+      </Container>
+      <div className="Footer mt-5">
         <Footer />
       </div>
-    </Container>
+    </>
   );
 }
