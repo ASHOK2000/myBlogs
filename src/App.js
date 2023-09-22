@@ -27,6 +27,8 @@ function App() {
         <Route path="/location" element={<Location></Location>}></Route>
         <Route path="/whyIPS" element={<WhyUs></WhyUs>}></Route>
         <Route path="/Login" element={<Login></Login>}> </Route>
+        <Route path="/Pricing" element={<Login></Login>}> </Route>
+
       </Routes>
 
 

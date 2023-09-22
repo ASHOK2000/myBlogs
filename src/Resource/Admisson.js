@@ -54,84 +54,80 @@ function Admisson() {
     </li>
   </ol>`;
 
-
-
   return (
-    <Container>
+    <>
       <div className="Header">
         <NavBar />
       </div>
+      <Container>
+        <Row>
+          <Col className={textcss.AdmissonFormhead}>
+            <div>ONLINE APPLICATION FORM - ACADEMIC YEAR 2023-24</div>
 
-      <Row>
-        <Col className={textcss.AdmissonFormhead}>
-          <div>ONLINE APPLICATION FORM - ACADEMIC YEAR 2023-24</div>
+            <div className="Admisson-Form">
+              For the Online Application form, please fill all nessesry fields
+              and submit a Hard Copy of Document in School .
+            </div>
+          </Col>
+        </Row>
 
-          <div className="Admisson-Form">
-            For the Online Application form, please fill all nessesry fields and
-            submit a Hard Copy of Document in School .
-          </div>
-        </Col>
-      </Row>
+        <AdmissonForm />
 
-      <AdmissonForm />
+        <div>HERE ARE THE MUST-KNOWS FOR A SMOOTH ADMISSION PROCESS.</div>
 
-      <div>HERE ARE THE MUST-KNOWS FOR A SMOOTH ADMISSION PROCESS.</div>
+        {/* Online Application Form */}
+        <Row>
+          <Button
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+            // style={{ maxWidth: "1200" }}
+            size="lg">
+            Online process
+          </Button>
 
-      {/* Online Application Form */}
-      <Row>
-        <Button
-          onClick={() => setOpen(!open)}
-          aria-controls="example-collapse-text"
-          aria-expanded={open}
-          // style={{ maxWidth: "1200" }}
-          size="lg"
-        >
-          Online process
-        </Button>
+          <Col>
+            <div style={{ minHeight: "20px" }}>
+              <Collapse in={open} dimension="width">
+                <div id="example-collapse-text">
+                  <Card body style={{ maxWidth: "device-width" }}>
+                    <p dangerouslySetInnerHTML={{ __html: paragraphText }} />
+                  </Card>
+                </div>
+              </Collapse>
+            </div>
+          </Col>
+        </Row>
 
-        <Col>
-          <div style={{ minHeight: "20px" }}>
-            <Collapse in={open} dimension="width">
-              <div id="example-collapse-text">
-                <Card body style={{ maxWidth: "device-width" }}>
-                  <p dangerouslySetInnerHTML={{ __html: paragraphText }} />
-                </Card>
-              </div>
-            </Collapse>
-          </div>
-        </Col>
-      </Row>
+        {/* offline process */}
 
-      {/* offline process */}
+        <Row>
+          <Button
+            onClick={() => setOpen1(!open1)}
+            aria-controls="Offline-collapse-text"
+            aria-expanded={open1}
+            // style={{ maxWidth: "1200" }}
+            size="lg">
+            Offline process{" "}
+          </Button>
 
-      <Row>
-        <Button
-          onClick={() => setOpen1(!open1)}
-          aria-controls="Offline-collapse-text"
-          aria-expanded={open1}
-          // style={{ maxWidth: "1200" }}
-          size="lg"
-        >
-          Offline process{" "}
-        </Button>
-
-        <Col>
-          <div style={{ minHeight: "20px" }}>
-            <Collapse in={open1} dimension="width">
-              <div id="Offline-collapse-text">
-                <Card body style={{ maxWidth: "device-width" }}>
-                  <p dangerouslySetInnerHTML={{ __html: paragraphText }} />
-                </Card>
-              </div>
-            </Collapse>
-          </div>
-        </Col>
-      </Row>
-
+          <Col>
+            <div style={{ minHeight: "20px" }}>
+              <Collapse in={open1} dimension="width">
+                <div id="Offline-collapse-text">
+                  <Card body style={{ maxWidth: "device-width" }}>
+                    <p dangerouslySetInnerHTML={{ __html: paragraphText }} />
+                  </Card>
+                </div>
+              </Collapse>
+            </div>
+          </Col>
+        </Row>
+      </Container>
       <div className="Footer">
         <Footer />
       </div>
-    </Container>
+    </>
   );
 }
 
