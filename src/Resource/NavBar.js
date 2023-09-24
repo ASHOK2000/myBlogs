@@ -65,9 +65,9 @@ export default function NavBar() {
                 <Nav.Link>WHY US </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Alumni">
+              {/* <LinkContainer to="/Alumni">
                 <Nav.Link>ALUMNI</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
 
               <LinkContainer to="/Admisson">
                 <Nav.Link>ADMISSON</Nav.Link>
