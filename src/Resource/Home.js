@@ -1,30 +1,25 @@
 import React from "react";
-import HomeContent from "./sub-pages/home-content";
+// import AllBlogsContent from "./sub-pages/AllBlogs-content";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-// import { Container } from "react-bootstrap";
+
+import { useState } from "react";
+import AllBlogs from "./BlogList";
 
 export default function Home() {
-
   return (
     <div>
-
       <div className="Header">
         <NavBar />
       </div>
 
-
-      <HomeContent />
-
-
+      <div>
+        <AllBlogs />
+      </div>
 
       <div className="Footer">
         <Footer />
       </div>
-
-
-
     </div>
   );
-
 }

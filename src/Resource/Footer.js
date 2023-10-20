@@ -7,9 +7,8 @@ import {
   MDBRow,
   MDBBtn,
 } from "mdb-react-ui-kit";
-import { EnvelopeAtFill, Telephone } from "react-bootstrap-icons";
 import Image from "react-bootstrap/Image";
-import logoImage from "../res_images/ips_logo.png";
+import logoImage from "../res_images/Ruralengineer.png";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -22,7 +21,6 @@ export default function Footer() {
           <div className="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
           </div>
-
           <div>
             <MDBBtn
               floating
@@ -112,11 +110,11 @@ export default function Footer() {
                   <Image
                     src={logoImage}
                     alt="indian Public school"
-                    className=""
+                    className="mb-5"
                     style={{ height: "80px" }}
                   />
-                  <br /> Vill. Suhili Ramnagar District: Satna Madhya-Pradesh
-                  INDIA
+                  {/* <br /> Vill. Suhili Ramnagar District: Satna Madhya-Pradesh
+                  INDIA */}
                 </p>
               </MDBCol>
 
@@ -124,6 +122,11 @@ export default function Footer() {
 
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <Link to="/Contact_us" className="text-reset">
+                    Help
+                  </Link>
+                </p>
                 <p>
                   <Link to="/Pricing" className="text-reset">
                     Pricing
@@ -134,29 +137,27 @@ export default function Footer() {
                     Admissons
                   </Link>
                 </p>
-                <p>
-                  <Link to="/Contact_us" className="text-reset">
-                    Help
-                  </Link>
-                </p>
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                <h6 className="text-uppercase fw-bold mb-4">Resources</h6>
 
                 <p>
-                  <EnvelopeAtFill /> &nbsp;
-                  <a href="mailto:Info@IndianPublicSchool.com">
-                    Info@IndianPublicSchool.com
-                  </a>
+                  <Link to="/" className="text-reset">
+                    Blogs
+                  </Link>
                 </p>
+
                 <p>
-                  <Telephone /> &nbsp;
-                  <a href="tel:6265173931">+91 6265173931</a>
+                  <Link to="/" className="text-reset">
+                    Course info
+                  </Link>
                 </p>
+
                 <p>
-                  <Telephone /> &nbsp;
-                  <a href="tel:9685843843">+91 6265173931</a>
+                  <Link to="/" className="text-reset">
+                    Interview Questions
+                  </Link>
                 </p>
               </MDBCol>
             </MDBRow>
