@@ -10,16 +10,24 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/About" element={<About />}></Route>
+        {/* Navigation Bar Routes */}
+        <Route path="/" element={<AllBlogs />}></Route>
+        <Route path="/Programming" element={<About />}></Route>
+        <Route path="/Integration" element={<PhonePeExpress />}></Route>
+        <Route path="/Devops" element={<Footer />}></Route>
+        <Route path="/Integration" element={<PhonePeExpress />}></Route>
+        <Route path="/Information-technology" element={<Footer />}></Route>
+        <Route path="/learning" element={<Footer />}></Route>
+        <Route path="/Seo" element={<Footer />}></Route>
+        <Route path="/Others" element={<Footer />}></Route>
 
-        <Route path="/Contact_us" element={<Contact></Contact>}>
-          {" "}
-        </Route>
-        <Route path="/" element={<AllBlogs></AllBlogs>}></Route>
-        <Route path="#" element={<Footer></Footer>}></Route>
+        {/* other Routes */}
         <Route
-          path="/Phonepewithexpress"
-          element={<PhonePeExpress></PhonePeExpress>}></Route>
+          path="/Integration/phonepe-express"
+          element={<PhonePeExpress />}></Route>
+        <Route path="/Integration/phonepe-nest" element={<Contact />}></Route>
+        <Route path="/Integration/stripe-express" element={<Contact />}></Route>
+        <Route path="/Integration/stripe-nest" element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>
   );

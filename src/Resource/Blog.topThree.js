@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useState } from "react";
 import initialCards from "./../data/allBlog.TitleData";
+import { Link } from "react-router-dom";
 
 export default function TopThreeBlog() {
   const [cards, setCards] = useState(initialCards);
@@ -21,13 +22,25 @@ export default function TopThreeBlog() {
           <Row>
             {cards.slice(0, visibleCards).map((card) => (
               <Col key={card.id} lg={4} md={6} sm={12} className="mb-4">
-                <Card>
+                <Card className="title-card">
                   <Card.Img variant="top" src={card.imageSrc} />
                   <Card.Body>
-                    <Card.Title>{card.title}</Card.Title>
-                    <Card.Text>{card.description}</Card.Text>
-                    <Button variant="primary">Read More</Button>
-                    <p className="mt-2">Author: {card.authorName}</p>
+                    <h5 className="head-Title">{card.title}</h5>
+                    <Card.Text style={{ fontFamily: "Arial" }}>
+                      {card.description}
+                    </Card.Text>
+                    <p>
+                      <Link to={card.blogUrl} className="read-more-button">
+                        Read More
+                      </Link>
+                    </p>
+                    <hr />
+                    <p className="">
+                      RuralEngineer:
+                      <Link to="/" style={{ textDecoration: "none" }}>
+                        {card.authorName}
+                      </Link>
+                    </p>
                   </Card.Body>
                 </Card>
               </Col>

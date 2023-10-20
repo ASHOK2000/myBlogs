@@ -21,7 +21,7 @@
 
 
 .NavStyle {
-    border-radius: 80px;
+    border-radius: 90px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,8 @@
     max-width: 300px;
     font-size: medium;
     box-shadow: 0 14px 28px #8f9cd4, 0 10px 10px #8f9cd4;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:5px;
 }
 
 .list-item {

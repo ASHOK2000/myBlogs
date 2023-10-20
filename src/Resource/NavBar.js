@@ -27,29 +27,29 @@ export default function NavBar() {
             <Nav className="ml-auto  list-item">
               <LinkContainer to="/">
                 <Nav.Link>
-                  <p className="nav-title  NavStyle Nav-name">AllBLOGS</p>
+                  <p className="nav-title  NavStyle Nav-name">All&nbsp;BLOGS</p>
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
                   <p className="nav-title NavStyle Nav-name ">PROGRAMMING</p>
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
                   <p className="nav-title NavStyle Nav-name ">INTEGRATION</p>
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
                   <p className="nav-title NavStyle Nav-name ">DEVOPS</p>
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
                   <p className="nav-title NavStyle Nav-name ">
                     INFORMATION TECHNOLOGY
@@ -57,19 +57,21 @@ export default function NavBar() {
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
                   <p className="nav-title  NavStyle Nav-name">LEARNING</p>
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
-                  <p className="nav-title  NavStyle Nav-name">JOURNAL</p>
+                  <p className="nav-title  NavStyle Nav-name">
+                    &nbsp;S E O&nbsp;
+                  </p>
                 </Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/Phonepewithexpress">
+              <LinkContainer to="/Integration">
                 <Nav.Link>
                   <p className="nav-title  NavStyle Nav-name">OTHERS</p>
                 </Nav.Link>

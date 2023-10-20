@@ -4,75 +4,111 @@ const initialCards = [
   {
     id: 1,
     imageSrc: logoImage,
-    title: "Integrate PhonePe Web Api using Express js",
+    title: "Integrate PhonePe in App/Web  using Express js",
     description:
       "Description for Card 1Description for Card 2Description for Card 2Dr Card 2Description for Card ",
-    blogUrl: "",
-    authorName: "Author 1",
+    blogUrl: "/Integration/phonepe-express",
+    authorName: "RuralEngineer",
   },
   {
     id: 2,
     imageSrc: logoImage,
-    title: "Integrate PhonePe Web Api using Nest js  ",
+    title: "Integrate PhonePe in App/Web using Nest js   ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    authorName: "Author 2",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 2",
   },
   {
     id: 3,
     imageSrc: logoImage,
-    title: "Card 3",
+    title: "Integrate Stripe in App/Web using Nest js ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
+    blogUrl: "/Integration/phonepe-express",
+
     authorName: "RuralEngineer",
   },
   {
     id: 4,
     imageSrc: logoImage,
-    title: "Card 4",
+    title: "Integrate Stipe in App/Web using Express js ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    authorName: "Author 4",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 4",
   },
   {
     id: 5,
     imageSrc: logoImage,
-    title: "Card 5",
+    title: "Integrate RazorPay in App/Web using Nest js ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    authorName: "Author 5",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 5",
   },
   {
     id: 6,
     imageSrc: logoImage,
-    title: "Card 6",
+    title: "Integrate RazorPay in App/Web using Express  js ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    authorName: "Author 6",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 6",
   },
   {
     id: 1,
     imageSrc: logoImage,
-    title: "Card 1",
+    title: "Slugify your blog Title",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......1",
-    authorName: "Author 1",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 1",
   },
   {
     id: 2,
     imageSrc: logoImage,
-    title: "Card 2",
+    title: " Create Bucket in AWS S3 ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......2",
-    authorName: "Author 2",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 2",
   },
   {
     id: 3,
     imageSrc: logoImage,
-    title: "Card 3",
+    title: "image upload in AWS S3 Bucket using nest js",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......3",
-    authorName: "Author 3",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 3",
+  },
+  {
+    id: 3,
+    imageSrc: logoImage,
+    title: "Integrate Zoom in App/Web using Express js ",
+    description:
+      "can wrap the word in <span> tags and use a CSS class  property  to apply ......3",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 3",
+  },
+  {
+    id: 3,
+    imageSrc: logoImage,
+    title: "Integrate Zoom in App/Web using Nest js",
+    description:
+      "can wrap the word in <span> tags and use a CSS class  property  to apply ......3",
+    blogUrl: "/Integration/phonepe-express",
+
+    authorName: "RuralEngineer 3",
   },
 ];
 

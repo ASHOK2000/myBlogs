@@ -34,7 +34,7 @@ export default function AllBlogs() {
                   </p>
                   <hr />
                   <p className="">
-                    Author:
+                    RuralEngineer:
                     <Link to="/" style={{ textDecoration: "none" }}>
                       {card.authorName}
                     </Link>
@@ -44,6 +44,7 @@ export default function AllBlogs() {
             </Col>
           ))}
         </Row>
+
         {visibleCards < cards.length && (
           <div className="text-center mt-4">
             <Button onClick={loadMore} variant="primary">

@@ -87,30 +87,47 @@ export default function PhonePeExpress() {
             </div>
             <div id="firstDiv">
               <div id="section1">
-                <h3>Introduction</h3>
+                <h6>Introduction</h6>
               </div>
             </div>
             <div id="secondDiv">
               <div id="section2">
-                <h3>Installation Of PhonePe Module</h3>
+                <h6>Installation Of PhonePe Module</h6>
                 <SyntaxHighlighter className="code_bg">
-                npm install react-syntax-highlighter --save                  <p></p>
+                  npm install react-syntax-highlighter --save <p></p>
                 </SyntaxHighlighter>
               </div>
               <div id="section3">
-                <h3>PhonePe Key Secrets</h3>
+                <h6>PhonePe Key Secrets</h6>
               </div>
               <div id="section3">
-                <h3>PhonePe Payload</h3>
+                <h6>PhonePe Payload</h6>
+                <SyntaxHighlighter className="code_bg">
+                  {`{
+  "merchantId": "MERCHANTUAT",
+  "merchantTransactionId": "MT7850590068188104",
+  "merchantUserId": "MU933037302229373",
+  "amount": 10000,
+  "callbackUrl": "https://webhook.site/callback-url",
+  "mobileNumber": "9999999999",
+  "deviceContext": {
+    "deviceOS": "ANDROID"
+  },
+  "paymentInstrument": {
+    "type": "UPI_INTENT",
+    "targetApp": "com.phonepe.app"
+  }
+}`}
+                </SyntaxHighlighter>
               </div>
               <div id="section3">
-                <h3>Payload to BASE64 Encoding</h3>
+                <h6>Payload to BASE64 Encoding</h6>
               </div>
               <div id="section3">
-                <h3>BASE64 to SHA256 Encoding</h3>
+                <h6>BASE64 to SHA256 Encoding</h6>
               </div>
               <div id="section3">
-                <h3>POST payload Using Axios</h3>
+                <h6>POST payload Using Axios</h6>
                 <div className="code_bg">
                   <SyntaxHighlighter language="javascript">
                     {`const express = require('express')
