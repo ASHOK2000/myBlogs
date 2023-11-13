@@ -13,12 +13,12 @@ const initialCards = [
   {
     id: 2,
     imageSrc: logoImage,
-    title: "Integrate PhonePe in App/Web using Nest js   ",
+    title: "Integrate PhonePe in App/Web using Nest js",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 2",
+    authorName: "RuralEngineer",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 4",
+    authorName: "RuralEngineer",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 5",
+    authorName: "RuralEngineer",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 6",
+    authorName: "RuralEngineer",
   },
   {
     id: 1,
@@ -68,7 +68,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......1",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 1",
+    authorName: "RuralEngineer",
   },
   {
     id: 2,
@@ -78,7 +78,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......2",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 2",
+    authorName: "RuralEngineer",
   },
   {
     id: 3,
@@ -88,7 +88,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......3",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 3",
+    authorName: "RuralEngineer",
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......3",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 3",
+    authorName: "RuralEngineer",
   },
   {
     id: 3,
@@ -108,7 +108,7 @@ const initialCards = [
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......3",
     blogUrl: "/Integration/phonepe-express",
 
-    authorName: "RuralEngineer 3",
+    authorName: "RuralEngineer",
   },
 ];
 

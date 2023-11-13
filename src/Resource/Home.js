@@ -17,7 +17,7 @@ export default function Home() {
         <AllBlogs />
       </div>
 
-      <div className="Footer">
+      <div className="Footer mt-5">
         <Footer />
       </div>
     </div>

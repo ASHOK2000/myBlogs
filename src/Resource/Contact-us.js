@@ -58,15 +58,15 @@ export default function Contact() {
                   <div className="row">
                     <div className="col-sm-5 mb-0 ml-5">
                       <div className="form-group">
-                        <label className="required-field" htmlFor="firstName">
-                          First Name
+                        <label className="required-field" htmlFor="Name">
+                          Name
                         </label>
                         <input
                           type="text"
                           className="form-control"
                           id="firstName"
                           name="firstName"
-                          placeholder="Your first name"
+                          placeholder="Your name"
                         />
                       </div>
                     </div>
@@ -121,7 +121,7 @@ export default function Contact() {
                           className="form-control"
                           id="message"
                           name="message"
-                          rows="4"
+                          rows="2"
                           placeholder="Hi there, I would like to....."></textarea>
                       </div>
                     </div>

@@ -109,12 +109,11 @@ export default function Footer() {
                   <MDBIcon icon="gem" className="me-3" />
                   <Image
                     src={logoImage}
-                    alt="indian Public school"
+                    alt="Rural Engineer Blogs"
                     className="mb-5"
                     style={{ height: "80px" }}
                   />
-                  {/* <br /> Vill. Suhili Ramnagar District: Satna Madhya-Pradesh
-                  INDIA */}
+               
                 </p>
               </MDBCol>
 
@@ -134,7 +133,7 @@ export default function Footer() {
                 </p>
                 <p>
                   <Link to="/Admisson" className="text-reset">
-                    Admissons
+                    Admisson
                   </Link>
                 </p>
               </MDBCol>
@@ -167,16 +166,16 @@ export default function Footer() {
           className="text-left"
           style={{ backgroundColor: "rgba(117, 17, 17, 0.05)" }}>
           <div className="text-center p-2">
-            © 2023 Copyright:
+            © 2023 Copyright: &nbsp;
             <a
               className="text-reset fw-bold"
-              href="https://IndianPublicSchool.com/">
-              IndianPublicSchool
-            </a>
+              href="https://ruralEngeer.com/">
+              ruralEngineer.com</a>
+              
           </div>
-          <Link to="/Devloper" style={{ textDecoration: "none" }}>
+          <Link to="/Developer" style={{ textDecoration: "none" }}>
             {" "}
-            Design and devloped By Ashok Kushwaha{" "}
+            Design and developed By Ashok Kushwaha{" "}
           </Link>
         </div>
       </MDBFooter>

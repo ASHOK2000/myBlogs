@@ -34,7 +34,7 @@ export default function AllBlogs() {
                   </p>
                   <hr />
                   <p className="">
-                    RuralEngineer:
+                    Author:
                     <Link to="/" style={{ textDecoration: "none" }}>
                       {card.authorName}
                     </Link>
