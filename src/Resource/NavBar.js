@@ -9,7 +9,7 @@ import "../css/navbar.css";
 
 export default function NavBar() {
   return (
-    <Container className="header-bg">
+    <Container className="">
       <div className="NavBody">
         <Navbar bg="" expand="lg">
           <Navbar.Brand href="/">
@@ -48,6 +48,7 @@ export default function NavBar() {
                   <p className="nav-title NavStyle Nav-name ">DEVOPS</p>
                 </Nav.Link>
               </LinkContainer>
+
 
               <LinkContainer to="/Integration">
                 <Nav.Link>

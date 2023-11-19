@@ -4,7 +4,7 @@ const initialCards = [
   {
     id: 1,
     imageSrc: logoImage,
-    title: "Integrate PhonePe in App/Web  using Express js",
+    title: "Integrate PhonePe in App/Web  using Express js   || done ",
     description:
       "Description for Card 1Description for Card 2Description for Card 2Dr Card 2Description for Card ",
     blogUrl: "/Integration/phonepe-express",
@@ -13,10 +13,10 @@ const initialCards = [
   {
     id: 2,
     imageSrc: logoImage,
-    title: "Integrate PhonePe in App/Web using Nest js",
+    title: "Integrate PhonePe in App/Web using Nest js    || done ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    blogUrl: "/Integration/phonepe-express",
+    blogUrl: "/Integration/phonepe-nest",
 
     authorName: "RuralEngineer",
   },
@@ -26,7 +26,7 @@ const initialCards = [
     title: "Integrate Stripe in App/Web using Nest js ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    blogUrl: "/Integration/phonepe-express",
+    blogUrl: "/Integration/stripe-express",
 
     authorName: "RuralEngineer",
   },
@@ -36,7 +36,7 @@ const initialCards = [
     title: "Integrate Stipe in App/Web using Express js ",
     description:
       "can wrap the word in <span> tags and use a CSS class  property  to apply ......",
-    blogUrl: "/Integration/phonepe-express",
+    blogUrl: "/Integration/stripe-express",
 
     authorName: "RuralEngineer",
   },

@@ -7,10 +7,10 @@ import "../../../css/PhonePe.express.css";
 import Contact from "./../../Contact-us";
 import Footer from "./../../Footer";
 import TopThreeBlog from "./../../Blog.topThree";
-import phonePeTitle from "./../../../InThisSection/phonepe.express.title";
+import phonePeTitle from "../../../InThisSection/phonepe.nest.title";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import titleImage from "../../../res_images/Phonepe_express.png";
-import paymentScreenshot from "../../../res_images/phonepe_payment.png";
+import AdvertisementPoster from "../../AdvertisementPoster";
 
 export default function PhonePeExpress() {
   const [isSticky, setIsSticky] = useState(false);
@@ -43,11 +43,9 @@ export default function PhonePeExpress() {
       <div className="Header">
         <NavBar />
       </div>
-      <Container>
 
-      </Container>
 
-      <Container fluid>
+      <Container fluid className="mt-5">
 
 
         <Row>
@@ -64,8 +62,7 @@ export default function PhonePeExpress() {
 
             <div>
               <h2 style={{ fontFamily: "calibre" }}>
-                How to Integrate PhonePe Payment Gateway in Node.js (Express)&nbsp;?
-                <hr></hr>
+                Integrating PhonePe with Express.js: A Step-by-Step Guide                <hr></hr>
               </h2>
             </div>
             <Container>
@@ -88,35 +85,24 @@ export default function PhonePeExpress() {
                   convenient and secure way to handle your financial
                   transactions.
                 </p>
-                <ul>
-                  <li>Versatile Payment Options</li>
-                  <li>Seamless Transactions</li>
-                  <li>Bank-Grade Security</li>
-                  <li>Bank-Grade Security</li>
-                </ul>
+
+                Versatile Payment Options
+                Seamless Transactions
+                Bank-Grade Security
+                Bank-Grade Security
+
               </div>
             </div>
             <div id="secondDiv">
               <div id="section2">
                 <h5>Installation Of PhonePe Module</h5>
+                <p>Ensure the necessary packages are installed by running the following command:</p>
                 <SyntaxHighlighter className="code_text">
-                  {`npm install axios ,
-npm install crypto,
-npm install express,
-npm install nodemon`}
+                  {`npm install express axios crypto nodemon `}
                 </SyntaxHighlighter>
               </div>
+
               <div id="section3">
-                <h5>PhonePe Key Secrets</h5>
-                <SyntaxHighlighter className="code_text">
-                  {`//please replace with your own key 
-"merchantId": 'MERCHANTUAT'
-Index_Key = '1'
-MerchantKey/salt key = '62d3ed13-81a2-465445-8542-9127771e11d6'
-`}
-                </SyntaxHighlighter>
-              </div>
-              <div id="section4">
                 <h5>Express Server</h5>
                 <SyntaxHighlighter className="code_text">
                   {`const express = require('express')
@@ -138,14 +124,35 @@ app.listen(port, () => {
 })`}
                 </SyntaxHighlighter>
               </div>
+
+              <div id="section3">
+                <h5>Express Route for Payment </h5>
+                <p>Create a dedicated route (/initiate-payment) to serve as the entry point for users to initiate the payment process.</p>
+                <SyntaxHighlighter className="code_text">
+                  {`app.get("/initiate-payment", async (req, res) => {
+  // ... code for initiating payment
+});`}
+                </SyntaxHighlighter>
+              </div>
+
+              <div id="section4">
+                <h5>PhonePe Key Secrets</h5>
+                <p>Replace with your own</p>
+                <SyntaxHighlighter className="code_text">
+                  {`MerchantKey/salt key = '62d3ed13-81a2-465445-8542-9127771e11d6'
+merchantId: 'YOURMERCHANTID'
+Index_Key = '1'
+`}
+                </SyntaxHighlighter>
+              </div>
               <div id="section5">
-                <h5>PhonePe Payload</h5>
+                <h5>Payload</h5>
                 <SyntaxHighlighter className="code_text">
                   {`const payload = {
   "merchantId": "MERCHANTUAT",
   "merchantTransactionId": "MT7850590068188104",
   "merchantUserId": "MU933037302229373",
-  "amount": 10000,
+  "amount": amount*100,
   redirectUrl: "https://webhook.site/redirect-url",
   "callbackUrl": "https://webhook.site/callback-url",
   "mobileNumber": "9999999999",
@@ -161,22 +168,22 @@ app.listen(port, () => {
               </div>
               <div id="section6">
                 <h5>Payload to BASE64 Encoding</h5>
+                <p>Convert the JSON Payload to Base64 Encoded Payload</p>
                 <SyntaxHighlighter>
-                  const payloadMain =
-                  Buffer.from(JSON.stringify(payload)).toString('base64');
+                  const payloadMain = Buffer.from(JSON.stringify(payload)).toString('base64');
                 </SyntaxHighlighter>
+                <p>Base64 encoded payload:</p>
                 <SyntaxHighlighter>
-                  {`RESULT
-payloadMain = ewogICJtZXJjaGFudElkIjogIkjkFUkNIQU5UVUFUIiwKICAibWVyY2hhbnRUcmFuc2FjdGlvbklkIjogIk1UNzg1MDU5MDA2ODE4ODEwNCIsCiAgIm1lcmNoYW50VXNlcklkIjogIk1VOTMzMDM3MzAyMjI5MzczIiwKICAiYW1vdW50IjogMTAwMDAsCiAgImNhbGxiYWNrVXJsIjogImh0dHBzOi8vd2ViaG9vay5zaXRlL2NhbGxiYWNrLXVybCIsCiAgIm1vYmlsZU51bWJlciI6ICI5OTk5OTk5OTk5IiwKICAiZGV2aWNlQ29udGV4dCI6IHsKICAgICJkZXZpY2VPUyI6ICJBTkRST0lEIgogIH0sCiAgInBheW1lbnRJbnN0cnVtZW50IjogewogICAgInR5cGUiOiAiVVBJX0lOVEVOVCIsCiAgICAidGFyZ2V0QXBwIjogImNvbS5waG9uZXBlLmFwcCIsCiAgICAiYWNjb3VudENvbnN0cmFpbnRzIjogW3sKICAgIAkiYWNjb3VudE51bWJlciI6ICI0MjAyMDAwMDE4OTIiLAogICAgCSJpZnNjIjogIklDSUMwMDAwMDQxIgogICAgfV0KICB9Cn0
+                  {`payloadMain = ewogICJtZXJjaGFudElkIjogIkjkFUkNIQU5UVUFUIiwKICAibWVyY2hhbnRUcmFuc2FjdGlvbklkIjogIk1UNzg1MDU5MDA2ODE4ODEwNCIsCiAgIm1lcmNoYW50VXNlcklkIjogIk1VOTMzMDM3MzAyMjI5MzczIiwKICAiYW1vdW50IjogMTAwMDAsCiAgImNhbGxiYWNrVXJsIjogImh0dHBzOi8vd2ViaG9vay5zaXRlL2NhbGxiYWNrLXVybCIsCiAgIm1vYmlsZU51bWJlciI6ICI5OTk5OTk5OTk5IiwKICAiZGV2aWNlQ29udGV4dCI6IHsKICAgICJkZXZpY2VPUyI6ICJBTkRST0lEIgogIH0sCiAgInBheW1lbnRJbnN0cnVtZW50IjogewogICAgInR5cGUiOiAiVVBJX0lOVEVOVCIsCiAgICAidGFyZ2V0QXBwIjogImNvbS5waG9uZXBlLmFwcCIsCiAgICAiYWNjb3VudENvbnN0cmFpbnRzIjogW3sKICAgIAkiYWNjb3VudE51bWJlciI6ICI0MjAyMDAwMDE4OTIiLAogICAgCSJpZnNjIjogIklDSUMwMDAwMDQxIgogICAgfV0KICB9Cn0
 `}{" "}
                 </SyntaxHighlighter>
               </div>
               <div id="section7">
-                <h5>BASE64 to SHA256 Encoding</h5>
+                <h5>Calculating the Hash</h5>
+                <p>Function calculateHash return's SHA256  Encoding
+                </p>
                 <SyntaxHighlighter>
-                  {`// Function calculateHash return's SHA256  Encoding
-
-const calculateHash = async (inputString) => {
+                  {`const calculateHash = async (inputString) => {
   const encoder = new TextEncoder('utf-8');
   const data = encoder.encode(inputString);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
@@ -186,18 +193,28 @@ const calculateHash = async (inputString) => {
 };
 `}
                 </SyntaxHighlighter>
-                <SyntaxHighlighter>
-                  {`const inputString = payloadMain + "/pg/v1/pay" + merchantKey;
+
+                <div id="section8">
+                  <h5>Constructing Request Headers</h5>
+                  <p>Final Computation:
+                    SHA256</p>
+                  <SyntaxHighlighter>
+                    {`const inputString = payloadMain + "/pg/v1/pay" + merchantKey;
 const cal_Hash = await calculateHash(inputString);
 const X_Verify = cal_Hash + ### + Index_Key 
 `}
-                </SyntaxHighlighter>
+                  </SyntaxHighlighter>
+
+                </div>
+
+
+
+                <p>Checksum Value : </p>
                 <SyntaxHighlighter>
-                  {`RESULT 
-X_Verify = f6d50792b783f793bd75ba9f3d4318fg4f5h71c05d5eec866896c6b673e327582ed###1`}
+                  {`X_Verify = f6d50792b783f793bd75ba9f3d4318fg4f5h71c05d5eec866896c6b673e327582ed###1`}
                 </SyntaxHighlighter>
               </div>
-              <div id="section7">
+              <div id="section9">
                 <h5>POST Payload Using Axios</h5>
                 <div>
                   <SyntaxHighlighter
@@ -209,10 +226,10 @@ X_Verify = f6d50792b783f793bd75ba9f3d4318fg4f5h71c05d5eec866896c6b673e327582ed##
     headers: {
       accept: "application/json",
       "Content-Type": "application/json",
-      "X-VERIFY": X_Verify,
+      "X-VERIFY": X_Verify, //X-verify
     },
     data: {
-      request: payloadMain,
+      request: payloadMain,//payload
     },
   };
   axios
@@ -224,7 +241,6 @@ X_Verify = f6d50792b783f793bd75ba9f3d4318fg4f5h71c05d5eec866896c6b673e327582ed##
       console.error(error);
     });
 });
-
 `}
                   </SyntaxHighlighter>
                 </div>
@@ -236,8 +252,8 @@ X_Verify = f6d50792b783f793bd75ba9f3d4318fg4f5h71c05d5eec866896c6b673e327582ed##
                   </SyntaxHighlighter>
                 </div>
 
-                <div className="">
-                  <h5>return data from phonePe </h5>
+                <div id="section9">
+                  <h5>Sample Response from PhonePe </h5>
                   <SyntaxHighlighter>
                     {`  {
   "success": true,
@@ -257,13 +273,27 @@ X_Verify = f6d50792b783f793bd75ba9f3d4318fg4f5h71c05d5eec866896c6b673e327582ed##
 }`}
                   </SyntaxHighlighter>
                 </div>
+                <div>
+                  <h5>Conclusion</h5>
+                  <p className="mt-3">
+                    <strong>Congratulations!</strong> You've successfully set up an Express.js application to initiate payments with PhonePe. This guide provides a foundation for securely integrating digital payment features into your web application, ensuring a smooth and reliable transaction experience for your users.
+                  </p>
+                  <div className="mt-5">
+                    <strong>
+                      the all guideline will provided for test key when you need to go live please change the url  post and your live key secrets
+
+                    </strong>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </Col>
 
           <Container>
-            <div className="paymentImage">
-              <img variant="" alt="Phone Pay ScreenShot " src={paymentScreenshot} />
+            <div className="mt-5">
+              <AdvertisementPoster />
             </div>
           </Container>
           {/*  ----------------------------------------- third Column---------------------------------------------------------*/}
