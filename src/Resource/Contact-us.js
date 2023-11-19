@@ -71,18 +71,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    {/* <div className="col-sm-6 mb-3">
-                      <div className="form-group">
-                        <label htmlFor="lastName">Last Name</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="lastName"
-                          name="lastName"
-                          placeholder="Your last name"
-                        />
-                      </div>
-                    </div> */}
+
 
                     <div className="col-sm-6 mb-3">
                       <div className="form-group">
@@ -99,20 +88,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    {/* <div className="col-sm-6 mb-3">
-                      <div className="form-group">
-                        <label htmlFor="phone">Phone Number</label>
-                        <input
-                          type="tel"
-                          className="form-control"
-                          id="phone"
-                          name="phone"
-                          placeholder="9898989898"
-                        />
-                      </div>
-                    </div> */}
-
-                    <div className="col-sm-12 mb-3">
+                    <div className="col-sm-12 mb-0">
                       <div className="form-group">
                         <label className="required-field" htmlFor="message">
                           How can we help?
@@ -121,16 +97,20 @@ export default function Contact() {
                           className="form-control"
                           id="message"
                           name="message"
-                          rows="2"
+                          rows="4"
                           placeholder="Hi there, I would like to....."></textarea>
                       </div>
                     </div>
 
-                    <div className="col-sm-12 mb-3">
+                    <div className="col-sm-12" style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                    }}>
                       <button
                         type="submit"
                         name="submit"
-                        className="btn btn-primary">
+                        className="btn btn-primary mt-5" size="lg" >
                         Submit
                       </button>
                     </div>
@@ -142,9 +122,6 @@ export default function Contact() {
         </div>
       </Container>
 
-      {/* <div className="Footer mt-5">
-        <Footer />
-      </div> */}
     </>
   );
 }

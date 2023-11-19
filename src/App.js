@@ -5,6 +5,7 @@ import About from "./Resource/About";
 import Contact from "./Resource/Contact-us";
 import Footer from "./Resource/Footer";
 import PhonePeExpress from "./Resource/Blogs/integration/PhonePe.Express";
+import PhonePeNest from "./Resource/Blogs/integration/phonepe.nest";
 
 function App() {
   return (
@@ -25,6 +26,12 @@ function App() {
         <Route
           path="/Integration/phonepe-express"
           element={<PhonePeExpress />}></Route>
+
+        <Route
+          path="/Integration/phonepe-nest"
+          element={<PhonePeNest />}></Route>
+
+
         <Route path="/Integration/phonepe-nest" element={<Contact />}></Route>
         <Route path="/Integration/stripe-express" element={<Contact />}></Route>
         <Route path="/Integration/stripe-nest" element={<Contact />}></Route>

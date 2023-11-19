@@ -9,7 +9,7 @@ import "../css/navbar.css";
 
 export default function NavBar() {
   return (
-    <Container className="header-bg">
+    <Container className="">
       <div className="NavBody">
         <Navbar bg="" expand="lg">
           <Navbar.Brand href="/">
